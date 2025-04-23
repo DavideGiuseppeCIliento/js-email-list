@@ -1,5 +1,9 @@
+const emails = [];
+
 // # ACQUISIZIONE API
-axios.get("https://flynn.boolean.careers/exercises/api/https://flynn.boolean.careers/exercises/api/random/mail/int").then((response) => {
-  const email = response.data.response;
-  console.log(email);
+axios.get("https://flynn.boolean.careers/exercises/api/random/mail").then((response) => {
+  for (let i = 0; i < 10; i++) {
+    emails.push(response.data.response);
+  }
+  console.table(emails);
 });
