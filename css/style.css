@@ -21,3 +21,12 @@
 .db-color3 {
   background-color: blue;
 }
+
+header,
+footer {
+  min-height: 10vh;
+}
+
+main {
+  min-height: 80vh;
+}
